@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <!--This link pulls in the google font Orbitron which is used for the title in the stylesheet under #title-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+<style>
+    body{
+        background: linear-gradient(180deg, rgba(0, 0, 0,1)  0%, rgba(47,69,80,1) ) #2f4550;
+    }
+    /*Style for the div containing the title of the webpage*/
+    #title{
+        font-family: "Orbitron", sans-serif;
+        font-size: 3em;
+        text-align: center;
+        padding: 20px;
+        color: #F4F4F9;
+        text-shadow:0 5px 5px rgba(7, 192, 232, .5);
+    }
+    /*Style for the div containing the image of Nomura and the caption*/
+    #img-div{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 55%;
+        text-align: center;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        grid-gap: 15px 15px;
+        color: #F4F4F9;
+        font-size: 1.15em;
+        background-color: #586f7c;
+        padding: 2%;
+        border-radius: 5px;
+        border-style: outset;
+        border-color: white;
+    }
+    #tribute-info{
+        padding: 2%;
+        width: 40%;
+        margin: 20px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #F4F4F9;
+        font-size: 1.15em;
+        /*background-color: rgba(255,255,255,.5);*/
+        background-color: #586f7c;
+        border-radius: 5px;
+        border-style: outset;
+        border-color: white;
+        
+
+    }
+    #star1{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 10% auto;
+    }
+    #star2{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 5% 10% auto 80%;
+    }
+    #star3{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 5% 5% auto 14%;
+    }
+    #star4{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 3% 17% auto 5%;
+    }
+    #star5{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 60% 75% 5% 5%;
+    }
+    #star6{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 7% 35% 5% 90%;
+    }
+    #star7{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 17% 3% 5% 94%;
+    }
+    #star8{
+        background-color: white;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 64% 77% 5% 8%;
+    }
+    #moon{
+        background-color: silver;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 1% 1% auto 80%;
+    }
+    h1{
+        font-family: "Orbitron", sans-serif;
+        text-align: center;
+        text-shadow:0 10px 10px rgba(0, 0, 0, .25);
+    }
+    /*Standard Center Picture with CSS*/
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    img{
+        display:block;
+        max-width: 100%;
+        height: auto;
+        border-width: 5px;
+        border-color: black;
+        border-style: outset;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+        align-self: center;
+    }
+    a{
+        color: pink;
+    }
+    a:hover{
+        color: lavender;
+    }
+</style>
+<html>
+    <body>
+        <!--Block for Stars and Moon in the Night Sky, see Style Sheet for more-->
+        <div id="star1"></div>
+        <div id="star2"></div>
+        <div id="star3"></div>
+        <div id="star4"></div>
+        <div id="star5"></div>
+        <div id="star6"></div>
+        <div id="star7"></div>
+        <div id="star8"></div>
+        <div id="moon"></div>
+        <!----------------------------------------------------------------------->
+        <main id="main">
+            <!--Title Div-->
+            <h1 id="title">Tetsuya Nomura</h1>
+            <!--Image and Caption-->
+            <div id="img-div">
+                <a href=#><img class="center" src="https://celebswiki.info/wp-content/uploads/2019/07/1563491752_Tetsuya-Nomura-Biography.jpg" alt="Tetsuya Nomura against a white background" id="image"></a>
+                <figcaption id="img-caption">Tetusya Nomura (Pictured above) is the creator of the acclaimed video game franchise <strong>Kingdom Hearts.</strong> He is well known for being the character designer on several of Square Enix's biggest games such as <strong>Final Fantasy VII</strong> and <strong>The World Ends With You</strong>.</figcaption>
+            </div>
+            <div id="tribute-info">
+                <h1>Works</h1>
+                <p>
+                    <i>Tetsuya Nomura has contributed to amazing works such as:</i>
+                    <ul>
+                        <li>Final Fantasy IV (1991)</li>
+                        <li>Final Fantasy VII (1997)</li>
+                        <li>Final Fantasy X/X-II (2001/2003)</li>
+                        <li>Final Fantasy XII (2003)</li>
+                        <li>Final Fantasy XV (2016)</li>
+                        <li>Kingdom Hearts (2002)</li>
+                        <li>The World Ends With You (2007)</li>
+                        <li>Chrono Trigger (1995)</li>
+                    </ul>
+                    And so many other great games that have contributed greatly to the gaming landscape over the years. 
+
+                </p>
+                <h1>Biography</h1>
+                <p>
+                    Tetsuya Nomura was born in Kōchi Prefecture, Japan on October 8, 1970 (age 50). Nomura's passion for art began when he was just 3 years old. Encourage by his father to begin learning digital art, Nomura began playing video games. His early influences would eventually point him towards his eventual destiny. Nomura was influenced by the Dragon Quest and Final Fantasy SNES titles.
+                </p>
+                <p>
+                    Nomura's early career with Square would begin as a debugger on Final Fantasy IV. Nomura became an artist on Final Fantasy V before eventually becoming the graphic director on Final Fantasy VI. Nomura's characters would go on to become some of the most recognizable character designs in gaming history. Practically anyone who has ever picked up a video game has heard the name Cloud Strife. Even Disney was convinced to work with the enigmatic Nomura in the creation of Kingdom Hearts, which to many is still one of the most bizarre partnerships in media.
+                </p>
+                <p>
+                    For more information on Tetsuya Nomura's contributions to the gaming landsacpe follow this <a href="https://en.wikipedia.org/wiki/Tetsuya_Nomura" id="tribute-link" target=_blank>link!</a>
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
