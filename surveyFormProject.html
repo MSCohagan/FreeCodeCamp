@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<style>
+    body{
+        background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3695700/1820/1214/m1/fpnw/wm0/france-.jpg?1512567077&s=4c6c1954943110e5d856cd5434ef1723");
+        background-size: 100%;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        /*text-shadow: 5px 0px 10px rgba(255,255,255, .25);*/
+        background-color: rgba(51, 51, 51, .9);
+        width: 40vw;
+        margin: 2% auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .formBox{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 2%;
+        background: rgba(51, 51, 51, .9);
+        width: 40vw;
+    }
+</style>
+<html>
+    <main>
+        <body>
+            <h1 id="title">French Club New Member Survey</h1>
+            <div class="formBox">
+                <p id="description">Help us get to know you!</p><br>
+                <form id="survey-form">
+                    <!--Name Field-->
+                    <label for="name" id="name-label">Enter your name:</label>
+                    <input id="name" type="text" name="name" placeholder="John Smith"required><br><br>
+                    <!--E-Mail Field--> 
+                    <label for="email" id="email-label">Enter your e-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="example@gmail.com"required><br><br>
+                    <!--Number Field-->
+                    <label for="number" id="number-label">How many years have you been studying French?:</label>
+                    <input id="number" type="number" name="number" min="1" max="125" placeholder="5"required><br><br>
+                    <!--Dropdown Menu-->
+                    <label for="dropdown" id="dropdown-label">How did you hear about us?</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="From a friend">From a friend</option>
+                        <option value="From a flyer">From a flyer</option>
+                        <option value="In class">In class</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+                    <textarea placeholder="If other tell us how!"></textarea><br>
+                    <!--Radio Buttons-->
+                    <!--Note: Radio buttons are grouped by name, in this case "radio"-->
+                    <h2>Are you a native speaker?</h2> 
+                    <input type="radio" id="radio1" name="radio" value="Yes">
+                    <label for="radio1">Yes</label><br>
+                    <input type="radio" id="radio2" name="radio" value="No">
+                    <label for="radio2">No</label><br>
+                    <!--Check Boxes-->
+                    <!--Note: Check boxes are not grouped and can have different names-->
+                    <H2>Would you attend any of the following events?</H2>
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="Soccer Game">
+                    <label for="checkbox1">Soccer Game</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox1" value="Movie Night">
+                    <label for="checkbox2">Movie Night</label><br>
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="Pot Luck">
+                    <label for="checkbox3">Pot Luck</label><br><br>
+                    <!--Text Area-->
+                    <textarea id="textarea" placeholder="What are you looking to get out of French Club?"></textarea><br>
+                    <!--Reset Button-->
+                    <input type="reset">
+                    <!--Submission Button--> 
+                    <input type="submit" id="submit">
+                </form>
+            </div>    
+        </body>
+    </main>
+</html>
