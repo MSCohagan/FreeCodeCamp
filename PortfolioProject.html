@@ -1,0 +1,162 @@
+<!Doctype html>
+<style>
+    body{
+        background: #4a4c51;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    nav ul{
+        list-style-type: none;
+        padding-left: 10px;
+    }
+    nav li{
+        display: inline;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    #navbar{
+        position: fixed;
+        width: 100vw;
+        height: 45px;
+        background-color: #36393e;
+        top: 0px;
+        margin-top: 0px;
+        left: 0px;
+        margin-left: 0px;
+        z-index: 999;
+    }
+    #welcome-section{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #welcome-section h1{
+        margin-top: 80px;
+        text-align: center;
+        font-size: 80px;
+        color: lightblue;
+        text-shadow: -2px 2px 5px rgba(255,102,204,.5);
+        z-index: 1;
+    }
+    #projects{
+        background: lightblue;
+        color: black;
+        width: 100vw;
+        height: 100vh;
+        left: 0px;
+        margin-left: 0px;
+        right: 0px;
+        margin-right: 0px;
+        text-align: center;
+        /*2x2 grid*/
+        display: inline-grid;
+        flex-direction: row;
+        padding-top: 25px;
+        gap: 25px;
+    }
+    /*Align top left*/
+    #project-1{
+        grid-row-start:0;
+        grid-row-end: 1;
+        grid-column-start:0;
+        grid-column-end: 1;
+    }
+    /*Align top right*/
+    #project-2{
+        grid-row-start:0;
+        grid-row-end: 1;
+        grid-column-start:1;
+        grid-column-end: 2;
+    }
+    /*Align bottom left*/
+    #project-3{
+        grid-row-start:1;
+        grid-row-end: 2;
+        grid-column-start:0;
+        grid-column-end: 1;
+    }
+    /*Align bottom right*/
+    #project-4{
+        grid-row-start:1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end: 2
+    }
+    .project-tile{
+        background-color: rgba(255,102,204,.4);
+    }
+    .project-tile img{
+        width: 400px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 4%;
+    }
+    #profile{
+        text-align: center;
+    }
+    #profile-link{
+        color: violet;
+    }
+    #profile-link:hover{
+        color: aqua;
+    }
+    @media only screen and (max-height:600px){
+        .project-tile img{
+            width: 200px;
+        }
+    }
+    @media only screen and (max-width:800){
+        .project-tile img{
+            width: 200px;
+        }
+    }
+</style>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Portfolio Project</title>
+    </head>
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#welcome-section">Welcome</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#profile">My Profile</a></li>
+                </ul>
+            </nav>
+            <section id="welcome-section">
+                <h1>Cohagan Customs</h1>
+            </section>
+            <section id="projects">
+                <div class="project-tile" id="project-1">
+                    <h2 >Product Landing Page</h2>
+                    <a href="https://codepen.io/mic-cohagan/pen/YzQedvp" target="_blank"><img src="https://assets.codepen.io/6919296/internal/screenshots/pens/YzQedvp.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1632123310&width=960" alt="Product Landing Page Picture"></a>
+                </div>
+                <div class="project-tile" id="project-2">
+                    <h2 >Technical Documentation</h2>
+                    <a href="https://codepen.io/mic-cohagan/pen/PojyvPr" target="_blank"><img src="https://assets.codepen.io/6919296/internal/screenshots/pens/NWgMeev.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1632271484&width=960" alt="Technical Documentation Picture"></a>
+                </div>
+                <div class="project-tile" id="project-3">
+                    <h2 >Survey Form</h2>
+                    <a href="https://codepen.io/mic-cohagan/pen/gORoVrW" target="_blank"><img src="https://assets.codepen.io/6919296/internal/screenshots/pens/gORoVrW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1631914969&width=960" alt="Survey Form Picture"></a>
+                </div>
+                <div class="project-tile" id="project-4">
+                    <h2>Tribute Page</h2>
+                    <a href="https://codepen.io/mic-cohagan/pen/bGRYPwg" target="_blank"><img src="https://assets.codepen.io/6919296/internal/screenshots/pens/bGRYPwg.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1631925047&width=960" alt="Tribute Page Picture"></a>
+                </div>
+            </section>
+            <div>
+                <p id="profile">Check out my GitHub profile <a href="https://github.com/MSCohagan" target="_blank" id="profile-link">here!</a></p>
+            </div>
+        </main>
+    </body> 
+</html>
